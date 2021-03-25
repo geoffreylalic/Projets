@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+<parent>
+    <groupId>bat20-e</groupId> <!-- à changer par le nom du groupe -->
+    <artifactId>Batisseur</artifactId> <!-- et le nom du projet -->
+    <version>1.0</version>
+</parent>
+    <groupId>bat20-e</groupId>
+    <artifactId>Moteur</artifactId>
+    <version>1.0</version>
+
+
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>  <!-- éventuellement à changer : localisation des fichiers sources -->
+        <testSourceDirectory>src/test/java
+        </testSourceDirectory>   <!-- <testSourceDirectory>src/test/java</testSourceDirectory>  éventuellement à changer : localisation des fichiers sources des tests -->
+
+        <plugins>
+
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version> <!-- à ne pas changer : c'est la version du plugin (et pas de java) -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>moteur.Serveur</mainClass>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+
+
+    <dependencies>
+        <dependency>
+            <groupId>bat20-e</groupId>
+            <artifactId>Commun</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.corundumstudio.socketio</groupId>
+            <artifactId>netty-socketio</artifactId>
+            <version>1.7.17</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-transport</artifactId>
+            <version>4.1.32.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.shared</groupId>
+            <artifactId>maven-invoker</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
