@@ -1,0 +1,227 @@
+/* début css démineur */
+
+#grille {
+    width: 720px;
+    height: 720px;
+    display: grid;
+    /* 1fr signifie "une fraction de la largeur de la grille", le repeat dit "9 cases" 
+       égales à une fraction (1/9ème) Voir https://css-tricks.com/snippets/css/complete-guide-grid/ */
+    grid-template-columns: repeat(9, 1fr);
+    /* Pour contraindre la hauteur des lignes */
+    grid-auto-rows: 80px;
+    
+}
+
+#grille div {
+    border: 1px solid rgba(0, 0, 0, 1);
+    transition: 0.5s all;
+    display: grid;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+#grille div:hover {
+    background-color: yellow;
+}
+
+.caseClick {
+    pointer-events: none;
+}
+
+
+/* fin css démineur */
+
+
+/* début css motfléchés */
+
+#grilleMF {
+    width: 921px;
+    height: 720px;
+    border: 1px;
+    display: grid;
+    /* 1fr signifie "une fraction de la largeur de la grille", le repeat dit "9 cases" 
+       égales à une fraction (1/9ème) Voir https://css-tricks.com/snippets/css/complete-guide-grid/ */
+    grid-template-columns: repeat(11, 1fr);
+    /* Pour contraindre la hauteur des lignes */
+    grid-auto-rows: 80px;
+}
+
+#grilleMF div {
+    border: 2px solid rgba(255, 255, 255,1);
+    transition: 0.5s all;
+    display: grid;
+    width: 80px;
+    text-align: center;
+}
+
+
+.haut {
+    position: inherit;
+    top: 0;
+    font-size: 10px;
+    font-weight:  bold;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    background-color :rgba(29, 161, 12, 0.5);
+}
+
+.bas {
+    position: inherit;
+    bottom: 0;
+    font-size: 10px;
+    font-weight:  bold;
+    border: none;
+    background-color :rgba(29, 161, 12, 0.5);
+}
+
+.divIndice {
+    font-size: 10px;
+    font-weight:  bold;
+    background-color :rgba(29, 161, 12, 0.5);
+}
+
+
+
+.caseARemplir {
+    background-color: rgba(100, 100, 100, 0.5);
+    font-size: 60px;
+    color: black;
+}
+
+.caseSelectionne {
+    background-color: hsla(310, 67%, 49%, 0.5) ;
+}
+
+.marqueLettre {
+    background-color: rgba(236, 162, 0, 0.5);
+    pointer-events: none;
+    font-weight:  bold;
+    color: red;
+}
+
+.triche {
+    background-color: red;
+    color:white;
+    transition: 1s;
+    pointer-events: none;
+}
+
+
+
+/* fin css motfléchés */
+
+#banner2 p {
+    font-size: 20px;
+    position: relative;
+    padding-top: 10px;
+    text-align: justify;
+    text-decoration-color: white;
+    margin: 0;
+}
+
+h2 {
+    color:white;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.titreRegles {
+    padding: 20px;
+}
+
+.regles {
+    padding: 30px;
+}
+
+.blockRegles {
+    padding: 50px;
+}
+
+.textRegles {
+    background-color: rgb(187, 185, 183);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+body{
+    background:url(../assets/images/demineur/fondecrant.png), no-repeat;
+    background-size: cover;
+
+}
+
+footer {
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0%;
+    display: inline;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(240, 236, 236);
+}
+
+.demineur {
+    position: relative;
+    top: 250px;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+    background-color: cornsilk;
+    height: 300px;
+    width: 300px;
+    color: black;
+}
+
+.motFleches {
+    position: relative;
+    top: 250px;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+    background-color: cornsilk;
+    height: 300px;
+    width: 300px;
+    color: black;
+}
+
+.imageAcceuil {
+    margin-left: 150px;
+    margin-right: 150px;
+    top: 100px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border: solid black;
+    transition: transform .2s
+}
+
+.imageAcceuil:hover {
+    transform: scale(1.1);
+}
+
+#nomJeu{
+    margin: 25px;
+    text-align: center;
+}
+
+.nomJeu{
+    color: red;
+    font-weight:bold;
+}
+
+#score{
+    padding-left: 30px;
+}
+.niveaux{
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+#pseudo{
+    color:red;
+    font-weight: bold;
+    padding: 20px;;
+}

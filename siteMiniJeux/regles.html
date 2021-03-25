@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Page d'accueil</title>
+    <link rel='stylesheet' href="css/styles.css" type='text/css'>
+    <script src="js/utils.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mini jeux</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="niveauxMotFléchés.html">Mot Fléchés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="niveauxDémineur.html">Démineur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="regles.html">Règles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progression.html">Progression</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="connexion.html">Connexion</a>
+                    </li>
+                    <span class="navbar-text" id="pseudoNav">
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="container">
+            <h1 class="titreRegles">Regles des jeux</h1>
+            <div class="blockRegles">
+                <h2 class="regles">Démineur</h2>
+                <p class="textRegles">
+                    Le but du jeu est de découvrir toutes les cases libres sans faire exploser les mines. <br>
+
+                    Pour libérer une case, faire un clic gauche (clic normal).<br>
+
+                    Pour marquer une mine, faire un clic droit, qui fera apparaître un drapeau.<br>
+
+                    Le compteur en haut à gauche indique le nombre de mines qu'il reste à trouver.<br>
+
+                    Le chiffre qui s'affiche sur les cases cliquées indique le nombre de mines se trouvant à proximité
+                    sur une distance de une case.<br>
+                </p>
+            </div>
+            <div class="blockRegles">
+                <h2 class="regles">Mots fléchées</h2>
+
+                <p class="textRegles">
+                    Comme son cousin les mots croisés, le but principal est de remplir toutes les cases de la grille
+                    qui
+                    délimite le périmètre de jeu.<br>
+                    Le joueur selectionne une case avec un clique normal et remplis les cases avec son clavier.<br>
+                    Aprés avoir fait cela le joueur devra completer la grille,quand le joueur a trouver un mot les
+                    cases
+                    correspondant au mot ne peuvent pas être changer.<br>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <footer> Omar Elmotacime-Geoffrey Lalic </footer>
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mot Fléchés</title>
+    <link rel='stylesheet' href="css/styles.css" type='text/css'>
+    <script src="js/connexion.js"></script>
+    <script src="js/utils.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mini jeux</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="niveauxMotFléchés.html">Mot Fléchés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="niveauxDémineur.html">Démineur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="regles.html">Règles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progression.html">Progression</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="connexion.html">Connexion</a>
+                    </li>
+                    <span class="navbar-text" id="pseudoNav">
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container text-white">
+        <div class="row">
+            <div class="col text-center">
+                <h2>Se Connecter</h2>
+                <div>Pseudo</div>
+                <input id="pseudoConnex" type="text">
+                <div>Mot de passe</div>
+                <input id="mdpConnex" type="password">
+                <br>
+                <button id="btnConnex">Connexion</button>
+                <button id="btnDeconnex">Deconexion</button>
+                <div id="connexion"></div>
+            </div>
+            <div class="col text-center">
+                <h2>S'enregistrer</h2>
+                <div>Pseudo</div>
+                <input id="pseudoRegister" type="text">
+                <div>Mot de passe</div>
+                <input id="mdpRegister" type="password">
+                <br>
+                <button id="btnRegister">S'enregistrer</button>
+                <div id="register"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer> Omar Elmotacime-Geoffrey Lalic </footer>
+
+</body>
+
+</html>
