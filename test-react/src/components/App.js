@@ -2,6 +2,7 @@ import React from 'react';
 import Profil from './Profil';
 import Message from './Message';
 import twitterData from '../TwitterData';
+import ClickEv from './ClickEv';
 import './App.css';
 
 class App extends React.Component {
@@ -31,6 +32,7 @@ class App extends React.Component {
             <div>
                 <p>loggedIn : {word}</p>
                 {data}
+                <ClickEv />
             </div>
         );
     }
