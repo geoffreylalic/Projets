@@ -1,35 +1,33 @@
 import React from 'react'
 
 class ClickEv extends React.Component {
-    constructor(){
-        super();
+    constructor() {
+        super()
         this.state = {
-            isCliked : false,
-            display : ''
+            nbClick: 0
         }
+        this.clickHandle = this.clickHandle.bind(this)
     }
 
-    click() {
-        if(this.state.isCliked ===  true){
-            this.state.isCliked = false
-            this.state.display = 'switch to false'
-        }else{
-            this.state.isCliked = true
-            this.state.display = 'switch to true'
-        }
-        
+    clickHandle() {
+        this.setState(prevState => {
+            return{
+                nbClick: prevState.nbClick + 1
+            }
+        });
     }
     render() {
-        
         return (
             <div>
-                <button onClick={this.click}>
+                <button
+                    onClick={this.clickHandle}
+                >
                     click me
                 </button>
-                <p>{this.state.display}</p>
-            </div>
-
-        )
+                <p>
+                    {this.state.nbClick}
+                </p>
+            </div>)
     }
 }
 

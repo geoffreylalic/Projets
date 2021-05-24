@@ -22,8 +22,12 @@ class App extends React.Component {
         }
         const data = twitterData.map(twit =>
             <div>
-                <Profil profil={twit.profil} />
-                <Message message={twit.message} />
+                <Profil profil={twit.profil} 
+                        key = {twit.key}
+                />
+                <Message message={twit.message} 
+                         key = {twit.key}
+                />
                 <p> states : {this.state.answer}</p>
                 <hr></hr>
             </div>
