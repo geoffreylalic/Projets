@@ -16,6 +16,7 @@ class ClickEv extends React.Component {
             }
         });
     }
+    
     render() {
         return (
             <div>

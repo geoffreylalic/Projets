@@ -5,6 +5,7 @@ class Message extends React.Component{
         return (
             <h2>
                 Message :{this.props.message}
+
             </h2>
         )
     }
